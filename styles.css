@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    width: 100vw;
+    padding: 0 10px;
+    flex-direction: row;
+    background: transparent linear-gradient(90deg,#FF99ED,#FFE6FF 49%,#FF99ED) 0 0 no-repeat;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav h2{
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav button{
+    border: none;
+    padding: 10px;
+    border-radius: 42% 58% 60% 40% / 44% 44% 56% 56%  ;
+    background-color: #FF43DE;
+}
+
+.nav button img{
+    width: 20px;
+    z-index: 2;
+}
+
+.nav .hamburger{
+    width: 20px;
+    display: none;
+}
+
+.nav input{
+    border-radius: 40px;
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+
+
+.nav .data-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav .data-list p{
+    margin: 5px 17px;
+    color: #fff;
+}
+
+.nav .search-container{
+    width: 30%;
+}
+.land{
+    height: 100vh;
+    width: 100vw;
+    background: url('./pink2.png');
+}
+picture{
+    width: 100vw;
+    object-fit: cover;
+}
+
+
+
+
+.landing-cover{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('WHISPER-FINAL.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding-bottom: 40px;
+    border-radius: 50%/0 0 70px 70px;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width:806px) {
+    .landing-cover{
+        background-image: url('whisper\ mobile.jpg');
+    }
+}
+
+@media only screen and (max-width:698px){
+    .nav input{
+        display: none;
+    }
+
+    .nav .hamburger{
+        display: inline;
+        margin-right: auto;
+    }
+
+    .nav .data-list{
+        display: none;
+    }
+
+    .nav .hamburger img{
+        width: 35px;
+    }
+
+    .nav button{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
